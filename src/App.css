@@ -2,16 +2,18 @@
   text-align: center;
   background-image: url('./img/sky.jpg');
   background-repeat: no-repeat;
-  background-position-y: top;
-  background-size: 100%;
+  background-position: top;
+  background-size: 100% 35%;
 }
 
 .s1 {
-  background-image: url('./img/section1.png');
+  background-image:
+    url('./img/section1.png');
+  /*,
+    url('./img/sky.jpg');*/
   background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: left;
-  background-size: 100%;
+  background-position: bottom;
+  background-size: 100%, cover;
 }
 
 .s2 {
