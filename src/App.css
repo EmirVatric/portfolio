@@ -1,22 +1,76 @@
 .App {
   text-align: center;
+  background-image: url('./img/sky.jpg');
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
+.s1 {
+  background-image: url('./img/section1.png');
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: left;
+  background-size: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.s2 {
+  background-image: url('./img/section2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-right: 17%;
+}
+
+.s3 {
+  background: lightblue;
+}
+
+h1 {
+  margin: 5px;
+}
+
+.wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-end;
 }
 
-.App-link {
-  color: #09d3ac;
+.aboutMe {
+  color: white;
+  width: 45%;
+  background: black;
+  padding: 3px 5px;
+  margin-bottom: -10px;
+  text-align: right;
+}
+
+.storieHolder {
+  margin-top: 50px;
+  width: 45%;
+  text-align: justify;
+  font-size: 19px;
+}
+
+.nameHolder {
+  color: white;
+  background: black;
+  padding: 2px 40px;
+}
+
+.storieButton {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  background: white;
+}
+
+.storieButton:focus {
+  outline: 0;
+}
+
+.storieButton:hover {
+  background: black;
+  color: white;
 }
