@@ -38,13 +38,26 @@ h1 {
   align-items: flex-end;
 }
 
+.imgWrapper {
+  width: 45%;
+  text-align: center;
+}
+
+.profPic {
+  margin: 0;
+  height: 200px;
+  border-radius: 50%;
+}
+
 .aboutMe {
   color: white;
   width: 45%;
   background: black;
-  padding: 3px 5px;
+  padding: 3px 0;
+  padding-right: 5px;
   margin-bottom: -10px;
   text-align: right;
+  margin-top: 0;
 }
 
 .storieHolder {
@@ -52,6 +65,8 @@ h1 {
   width: 45%;
   text-align: justify;
   font-size: 19px;
+  border-bottom: solid 1px black;
+  padding-bottom: 10px;
 }
 
 .nameHolder {

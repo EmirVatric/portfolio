@@ -20,6 +20,11 @@ const FullPage = () => (
           </div>
           <div className="section s2">
             <div className='wrapper'>
+              { /*
+              <div className='imgWrapper'>
+                <img src={profile} alt="Profile" className='profPic' />
+              </div>
+             */}
               <h1 className='aboutMe'>ABOUT ME</h1>
               <p className='storieHolder'>My storie is not a simple one, but it is an interesing one!
                 A <b>storie</b> about a guy whose hobby overtook all of his free time, a storie about a guy who found his true calling.
