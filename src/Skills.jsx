@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './Skills.css';
 import frontSvg from './img/frontend.png'
 import backSvg from './img/backgend.png'
@@ -13,8 +13,59 @@ import nodePng from './img/node.png'
 import postgrePNG from './img/postgresql.png'
 import mongoPNG from './img/mongo.png'
 import jqueryPNG from './img/jquery.gif'
+import { TweenMax, Power3 } from 'gsap'
+const Skills = (props) => {
+  const tech = [
+    { react: useRef(null) },
+    { angular: useRef(null) },
+    { html: useRef(null) },
+    { css: useRef(null) },
+    { bootstrap: useRef(null) },
+    { javascript: useRef(null) }
+  ]
 
-const Skills = () => {
+  const tech2 = [
+    { rails: useRef(null) },
+    { node: useRef(null) },
+    { post: useRef(null) },
+    { mongo: useRef(null) },
+    { jquery: useRef(null) },
+    { javascript: useRef(null) }
+  ]
+  useEffect(() => {
+    let name;
+    let name2;
+    let counter = 0.5;
+    if (props.index.destination !== undefined) {
+      if (props.index.destination.index === 2) {
+        for (let i = 0; i < tech.length; i++) {
+          name = Object.keys(tech[i])[0]
+          name2 = Object.keys(tech2[i])[0]
+          counter += 0.2;
+          TweenMax.to(
+            tech[name],
+            0.5,
+            {
+              opacity: 1,
+              y: 0,
+              delay: counter,
+              ease: Power3.easeOut
+            }
+          );
+          TweenMax.to(
+            tech2[name2],
+            0.5,
+            {
+              opacity: 1,
+              y: 0,
+              delay: counter,
+              ease: Power3.easeOut
+            }
+          )
+        }
+      }
+    }
+  })
   return (
     <div className='skillsWrapper'>
       <div className='side border'>
@@ -22,37 +73,49 @@ const Skills = () => {
         <h2>Front-end Developer</h2>
         <p className='description'>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
         <div className="languages">
-          <div className='language'>
+          <div className='language'
+            ref={el => tech.react = el}
+          >
             <div className='logoWrapper'>
               <img src={reactSvg} alt="react-Logo" />
             </div>
             <span>ReactJS</span>
           </div>
-          <div className='language'>
+          <div
+            ref={el => tech.angular = el}
+            className='language'>
             <div className='logoWrapper'>
               <img src={angularPng} alt="angular-Logo" />
             </div>
             <span>Angular 2+</span>
           </div>
-          <div className='language'>
+          <div
+            ref={el => tech.html = el}
+            className='language'>
             <div className='logoWrapper'>
               <img src={htmlPng} alt="html-Logo" />
             </div>
             <span>HTML</span>
           </div>
-          <div className='language'>
+          <div
+            ref={el => tech.css = el}
+            className='language'>
             <div className='logoWrapper'>
               <img src={cssPng} alt="css-Logo" />
             </div>
             <span>CSS</span>
           </div>
-          <div className='language'>
+          <div
+            ref={el => tech.bootstrap = el}
+            className='language'>
             <div className='logoWrapper'>
               <img src={bootstrapPng} alt="bootstrap-Logo" />
             </div>
             <span>Bootstrap</span>
           </div>
-          <div className='language'>
+          <div
+            ref={el => tech.javascript = el}
+            className='language'>
             <div className='logoWrapper'>
               <img src={jsPng} alt="js-Logo" />
             </div>
@@ -65,37 +128,49 @@ const Skills = () => {
         <h2>Back-end Developer</h2>
         <p className='description'>I like clean code and algoritmic solutions, and enjoy bringing ideas to life in the browser.</p>
         <div className="languages">
-          <div className='language'>
+          <div
+            ref={el => tech2.rails = el}
+            className='language'>
             <div className='logoWrapper'>
               <img src={railsPng} alt="rails-Logo" />
             </div>
             <span>Ruby on Rails</span>
           </div>
-          <div className='language'>
+          <div
+            ref={el => tech2.node = el}
+            className='language'>
             <div className='logoWrapper'>
               <img src={nodePng} alt="node-Logo" />
             </div>
             <span>Node.js</span>
           </div>
-          <div className='language'>
+          <div
+            ref={el => tech2.post = el}
+            className='language'>
             <div className='logoWrapper'>
               <img src={postgrePNG} alt="postgresql-Logo" />
             </div>
             <span>PostgreSQL</span>
           </div>
-          <div className='language'>
+          <div
+            ref={el => tech2.mongo = el}
+            className='language'>
             <div className='logoWrapper'>
               <img src={mongoPNG} className='mongo' alt="mongodb-Logo" />
             </div>
             <span>MongoDB</span>
           </div>
-          <div className='language'>
+          <div
+            ref={el => tech2.jquery = el}
+            className='language'>
             <div className='logoWrapper'>
               <img src={jqueryPNG} alt="jquery-Logo" />
             </div>
             <span>jQuery</span>
           </div>
-          <div className='language'>
+          <div
+            ref={el => tech2.javascript = el}
+            className='language'>
             <div className='logoWrapper'>
               <img src={jsPng} alt="js-Logo" />
             </div>
