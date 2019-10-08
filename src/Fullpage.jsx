@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Skills from './Skills';
+import Projects from './Projects'
 import { TweenMax, Power3 } from 'gsap'
 let header
 let aboutMe
@@ -14,6 +15,8 @@ const FullPage = () =>
       licenseKey={'key'}
       scrollingSpeed={1000} /* Options here */
       navigation={true}
+      scrollOverflow={true}
+      css3={true}
       afterLoad={(origin, destination, direction) => {
         if (origin.index === 0 && destination.index !== 1) {
           TweenMax.to(
@@ -105,7 +108,7 @@ const FullPage = () =>
                 <h1 className='aboutMe'>ABOUT ME</h1>
                 <p className='storieHolder'>My storie is not a simple one, but it is an interesing one!
                 A <b>storie</b> about a guy whose hobby overtook all of his free time, a storie about a guy who found his true calling.
-                                                                                                                                                                                                                      I absolutely love to code exciting, dynamic and functional websites and applications. I like beeing in competitive enviroment,
+                                                                                                                                                                                                                                      I absolutely love to code exciting, dynamic and functional websites and applications. I like beeing in competitive enviroment,
                 <b>working hard</b> for employer who can recognize my desire to learn and advance in many different fields in bouth <b>front-end</b> and <b>back-end</b>.
               </p>
               </div>
@@ -115,8 +118,8 @@ const FullPage = () =>
               <Skills index={state} />
             </div>
             <div className="section s4">
-              Emir
-          </div>
+              <Projects />
+            </div>
           </ReactFullpage.Wrapper>
         );
       }}
