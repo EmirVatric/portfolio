@@ -3,7 +3,7 @@
   background-image: url('./img/sky.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100% 35%;
+  background-size: 100% 25%;
 }
 
 .s1 {
@@ -24,7 +24,7 @@
 }
 
 .s3 {
-  background: lightblue;
+  background: #17223B;
 }
 
 h1 {

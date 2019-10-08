@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
+import Skills from './Skills';
 
 const FullPage = () => (
   <ReactFullpage
@@ -35,7 +36,10 @@ const FullPage = () => (
 
           </div>
           <div className="section s3">
-            <p>Section 3</p>
+            <Skills />
+          </div>
+          <div className="section s3">
+            Emir
           </div>
         </ReactFullpage.Wrapper>
       );
