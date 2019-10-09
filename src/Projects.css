@@ -3,8 +3,20 @@
   justify-content: space-around;
 }
 
+.sectionWrapper {
+  opacity: 0;
+}
+
+.headingTitle {
+  background: black;
+  display: inline;
+  color: white;
+  padding: 0.5% 20%;
+}
+
 .heading {
   margin: 100px 0;
+
 }
 
 .project1 {
@@ -27,6 +39,7 @@
 .project1:hover {
   transform: scale(1.05);
 }
+
 
 .project2:hover {
   transform: scale(1.05);

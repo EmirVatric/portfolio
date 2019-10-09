@@ -1,11 +1,41 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
+import { TweenMax, Power2 } from 'gsap'
 import './Projects.css'
 
-const Projects = () => {
+const Projects = (props) => {
+  let sectionWrapper = useRef(null)
+  useEffect(() => {
+    if (props.index.destination !== undefined) {
+
+      if (props.index.origin.index === 3) {
+        TweenMax.to(
+          sectionWrapper,
+          0.5,
+          {
+            opacity: 0,
+            ease: Power2.easeOut
+          }
+        );
+      }
+      if (props.index.destination.index === 3) {
+        TweenMax.to(
+          sectionWrapper,
+          1,
+          {
+            opacity: 1,
+            delay: 0.5,
+            ease: Power2.easeOut
+          }
+        );
+      }
+    }
+  })
   return (
-    <div>
+    <div
+      ref={el => sectionWrapper = el}
+      className='sectionWrapper'>
       <div className='heading'>
-        <h1>My Projects</h1>
+        <h1 className='headingTitle'>MY PROJECTS</h1>
       </div>
       <div className='wall'>
         <div className="projectWrapperLeft">

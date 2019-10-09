@@ -16,6 +16,7 @@ import jqueryPNG from './img/jquery.gif'
 import gitPNG from './img/git.png'
 import { TweenMax, Power3 } from 'gsap'
 const Skills = (props) => {
+  let wrapper = useRef(null)
   const tech = [
     { react: useRef(null) },
     { angular: useRef(null) },
@@ -38,7 +39,28 @@ const Skills = (props) => {
     let name2;
     let counter = 0.5;
     if (props.index.destination !== undefined) {
+      if (props.index.origin.index === 2) {
+        TweenMax.to(
+          wrapper,
+          0.5,
+          {
+            opacity: 0,
+            y: -100,
+            ease: Power3.easeOut
+          }
+        );
+      }
       if (props.index.destination.index === 2) {
+        TweenMax.to(
+          wrapper,
+          0.5,
+          {
+            opacity: 1,
+            y: 0,
+            delay: counter,
+            ease: Power3.easeOut
+          }
+        );
         for (let i = 0; i < tech.length; i++) {
           name = Object.keys(tech[i])[0]
           name2 = Object.keys(tech2[i])[0]
@@ -68,7 +90,9 @@ const Skills = (props) => {
     }
   })
   return (
-    <div className='skillsWrapper'>
+    <div
+      ref={el => wrapper = el}
+      className='skillsWrapper'>
       <div className='side border'>
         <img src={frontSvg} className='front-icon' alt='frontend-icon' />
         <h2>Front-end Developer</h2>

@@ -4,7 +4,7 @@
   background-image: url('./img/sky.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100% 25%;
+  background-size: 100% 20%;
 }
 
 .headerSection {
@@ -35,6 +35,10 @@
 }
 
 .s4 {
+  background: url('./img/s4backg.jpg');
+}
+
+.s5 {
   background: url('./img/s4backg.jpg');
 }
 
