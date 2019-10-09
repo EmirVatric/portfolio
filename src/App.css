@@ -3,7 +3,12 @@
   background-image: url('./img/sky.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100% 35%;
+  background-size: 100% 25%;
+}
+
+.headerSection {
+  opacity: 0;
+  margin-top: -50px;
 }
 
 .s1 {
@@ -24,7 +29,11 @@
 }
 
 .s3 {
-  background: lightblue;
+  background: #17223B;
+}
+
+.s4 {
+  background: white;
 }
 
 h1 {
@@ -32,19 +41,33 @@ h1 {
 }
 
 .wrapper {
+  opacity: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
+.imgWrapper {
+  width: 45%;
+  text-align: center;
+}
+
+.profPic {
+  margin: 0;
+  height: 200px;
+  border-radius: 50%;
+}
+
 .aboutMe {
   color: white;
   width: 45%;
   background: black;
-  padding: 3px 5px;
+  padding: 3px 0;
+  padding-right: 5px;
   margin-bottom: -10px;
   text-align: right;
+  margin-top: 0;
 }
 
 .storieHolder {
@@ -52,6 +75,8 @@ h1 {
   width: 45%;
   text-align: justify;
   font-size: 19px;
+  border-bottom: solid 1px black;
+  padding-bottom: 10px;
 }
 
 .nameHolder {
