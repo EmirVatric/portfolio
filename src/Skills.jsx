@@ -13,6 +13,7 @@ import nodePng from './img/node.png'
 import postgrePNG from './img/postgresql.png'
 import mongoPNG from './img/mongo.png'
 import jqueryPNG from './img/jquery.gif'
+import gitPNG from './img/git.png'
 import { TweenMax, Power3 } from 'gsap'
 const Skills = (props) => {
   const tech = [
@@ -21,7 +22,7 @@ const Skills = (props) => {
     { html: useRef(null) },
     { css: useRef(null) },
     { bootstrap: useRef(null) },
-    { javascript: useRef(null) }
+    { jquery: useRef(null) }
   ]
 
   const tech2 = [
@@ -29,8 +30,8 @@ const Skills = (props) => {
     { node: useRef(null) },
     { post: useRef(null) },
     { mongo: useRef(null) },
-    { jquery: useRef(null) },
-    { javascript: useRef(null) }
+    { javascript: useRef(null) },
+    { git: useRef(null) }
   ]
   useEffect(() => {
     let name;
@@ -114,12 +115,12 @@ const Skills = (props) => {
             <span>Bootstrap</span>
           </div>
           <div
-            ref={el => tech.javascript = el}
+            ref={el => tech.jquery = el}
             className='language'>
             <div className='logoWrapper'>
-              <img src={jsPng} alt="js-Logo" />
+              <img src={jqueryPNG} alt="jquery-Logo" />
             </div>
-            <span>Javascript</span>
+            <span>jQuery</span>
           </div>
         </div>
       </div>
@@ -161,20 +162,20 @@ const Skills = (props) => {
             <span>MongoDB</span>
           </div>
           <div
-            ref={el => tech2.jquery = el}
-            className='language'>
-            <div className='logoWrapper'>
-              <img src={jqueryPNG} alt="jquery-Logo" />
-            </div>
-            <span>jQuery</span>
-          </div>
-          <div
             ref={el => tech2.javascript = el}
             className='language'>
             <div className='logoWrapper'>
-              <img src={jsPng} alt="js-Logo" />
+              <img src={jsPng} alt="javascript-Logo" />
             </div>
-            <span>Javascript</span>
+            <span>JavaScript</span>
+          </div>
+          <div
+            ref={el => tech2.git = el}
+            className='language'>
+            <div className='logoWrapper'>
+              <img src={gitPNG} alt="git-Logo" />
+            </div>
+            <span>Git</span>
           </div>
         </div>
       </div>
