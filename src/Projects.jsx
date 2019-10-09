@@ -6,17 +6,6 @@ const Projects = (props) => {
   let sectionWrapper = useRef(null)
   useEffect(() => {
     if (props.index.destination !== undefined) {
-
-      if (props.index.origin.index === 3) {
-        TweenMax.to(
-          sectionWrapper,
-          0.5,
-          {
-            opacity: 0,
-            ease: Power2.easeOut
-          }
-        );
-      }
       if (props.index.destination.index === 3) {
         TweenMax.to(
           sectionWrapper,
@@ -34,6 +23,13 @@ const Projects = (props) => {
     <div
       ref={el => sectionWrapper = el}
       className='sectionWrapper'>
+      <div className="box-1">
+        <div
+          onClick={() => props.fullpageapi.moveSectionUp()}
+          className="btn btn-one">
+          <span>GO UP</span>
+        </div>
+      </div>
       <div className='heading'>
         <h1 className='headingTitle'>MY PROJECTS</h1>
       </div>
@@ -67,6 +63,13 @@ const Projects = (props) => {
             <h4>Restaurant administration</h4>
             <p>This is part where we write something about this page.</p>
           </div></div>
+        </div>
+      </div>
+      <div className="box-1">
+        <div
+          onClick={() => props.fullpageapi.moveSectionDown()}
+          className="btn btn-one">
+          <span>GO DOWN</span>
         </div>
       </div>
     </div>
