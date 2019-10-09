@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: url('./img/s4backg.jpg');
   background-image: url('./img/sky.jpg');
   background-repeat: no-repeat;
   background-position: top;
@@ -22,6 +23,7 @@
 }
 
 .s2 {
+
   background-image: url('./img/section2.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -29,11 +31,11 @@
 }
 
 .s3 {
-  background: #17223B;
+  background: url('./img/s4backg.jpg') top repeat;
 }
 
 .s4 {
-  background: white;
+  background: url('./img/s4backg.jpg');
 }
 
 h1 {
