@@ -23,13 +23,7 @@ const Projects = (props) => {
     <div
       ref={el => sectionWrapper = el}
       className='sectionWrapper'>
-      <div className="box-1">
-        <div
-          onClick={() => props.fullpageapi.moveSectionUp()}
-          className="btn btn-one">
-          <span>GO UP</span>
-        </div>
-      </div>
+
       <div className='heading'>
         <h1 className='headingTitle'>MY PROJECTS</h1>
       </div>
@@ -65,13 +59,7 @@ const Projects = (props) => {
           </div></div>
         </div>
       </div>
-      <div className="box-1">
-        <div
-          onClick={() => props.fullpageapi.moveSectionDown()}
-          className="btn btn-one">
-          <span>GO DOWN</span>
-        </div>
-      </div>
+
     </div>
   );
 }

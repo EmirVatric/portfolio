@@ -64,7 +64,7 @@ const Skills = (props) => {
         for (let i = 0; i < tech.length; i++) {
           name = Object.keys(tech[i])[0]
           name2 = Object.keys(tech2[i])[0]
-          counter += 0.1;
+          counter += 0.2;
           TweenMax.to(
             tech[name],
             0.5,
@@ -86,6 +86,7 @@ const Skills = (props) => {
             }
           )
         }
+
       }
     }
   })
