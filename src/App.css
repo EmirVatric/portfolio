@@ -46,6 +46,12 @@ h1 {
   margin: 5px;
 }
 
+.socials {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
 .wrapper {
   opacity: 0;
   width: 100%;

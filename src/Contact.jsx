@@ -20,31 +20,49 @@ export default class Contact extends React.Component {
             <h3>via email</h3>
             <form className="test-mailing">
               <div>
-                <input type="text"
-                  id='name'
-                  className='input'
-                  onChange={this.handleChangeName}
-                  placeholder="Enter Your name"
-                  required
-                  value={this.state.name} />
-                <input type="text"
-                  id='email'
-                  className='input'
-                  onChange={this.handleChangeEmail}
-                  placeholder="Enter your email"
-                  required
-                  value={this.state.email} />
-                <textarea
-                  id="test-mailing"
-                  className='messageBox'
-                  name="test-mailing"
-                  onChange={this.handleChangeMessage}
-                  placeholder="Write me a message"
-                  required
-                  value={this.state.feedback}
-                />
+                <div class="group">
+                  <input type="text"
+                    id='name'
+                    className='input'
+                    onChange={this.handleChangeName}
+                    required
+                    value={this.state.name} />
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Name</label>
+                </div>
+
+
+                <div class="group">
+                  <input type="email"
+                    id='email'
+                    className='input'
+                    onChange={this.handleChangeEmail}
+                    required
+                    value={this.state.email} />
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Email</label>
+                </div>
+
+                <div class="group">
+                  <input
+                    id="test-mailing"
+                    name="test-mailing"
+                    className='message'
+                    onChange={this.handleChangeMessage}
+                    required
+                    value={this.state.feedback}
+                  />
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Write me a message</label>
+                </div>
+
+
+
               </div>
-              <input type="button" value="Submit" className="btn btn-1 btn-sep icon-info" onClick={this.handleSubmit} />
+              <input type="button" value="Submit" style={{ width: '50%' }} className="btn btn-1 btn-sep icon-info" onClick={this.handleSubmit} />
             </form>
           </div>
           <div className='block2'>
