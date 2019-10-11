@@ -17,7 +17,6 @@ export default class Contact extends React.Component {
         <div className='formWrapper'>
           <div className='block'>
             <h1 className='headingContact'>CONTACT ME</h1>
-            <h3>via email</h3>
             <form className="test-mailing">
               <div>
                 <div className="group">
@@ -62,12 +61,12 @@ export default class Contact extends React.Component {
 
 
               </div>
-              <input type="button" value="Submit" style={{ width: '50%' }} className="btn btn-1 btn-sep icon-info" onClick={this.handleSubmit} />
+              <input type="button" value="Submit" className="btn btn-1 btn-sep icon-info" onClick={this.handleSubmit} />
             </form>
           </div>
           <div className='block2'>
-            <blockquote class="ludwig">
-              Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.
+            <blockquote className="ludwig">
+              Web design is not just about creating pretty layouts. It’s about understanding the marketing challenge behind your business.
             </blockquote>
           </div>
         </div>

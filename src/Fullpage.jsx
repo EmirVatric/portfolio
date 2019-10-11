@@ -18,7 +18,6 @@ const FullPage = () =>
       scrollingSpeed={1000} /* Options here */
       navigation={true}
       scrollOverflow={true}
-      //normalScrollElements={'.s4'}
       afterLoad={(origin, destination, direction) => {
         if (origin.index === 0 && destination.index !== 1) {
           TweenMax.to(
@@ -94,7 +93,7 @@ const FullPage = () =>
                 <h1>Hello, I'm <span className='nameHolder'>Emir Vatrić.</span></h1>
                 <h1>I'm full-stack web developer.</h1>
                 <button className='storieButton' onClick={() => fullpageApi.moveSectionDown()}>
-                  SEE MY STORIE
+                  SEE MY STORY
                 </button>
               </div>
             </div>
@@ -108,10 +107,9 @@ const FullPage = () =>
               </div>
              */}
                 <h1 className='aboutMe'>ABOUT ME</h1>
-                <p className='storieHolder'>My storie is not a simple one, but it is an interesing one!
-                A <b>storie</b> about a guy whose hobby overtook all of his free time, a storie about a guy who found his true calling.
-                                                                                                                                                                                                                                                                                                                            I absolutely love to code exciting, dynamic and functional websites and applications. I like beeing in competitive enviroment,
-                <b>working hard</b> for employer who can recognize my desire to learn and advance in many different fields in bouth <b>front-end</b> and <b>back-end</b>.
+                <p className='storieHolder'>
+                  I love to code exciting, dynamic and functional websites and applications, enjoy working in a healthy environment and strive to be a good coworker.
+                I deliver projects on <b>time</b>, <b>quality</b> and <b>budget</b>.
               </p>
                 <div className='socials'><span><i className="fa fa-linkedin"></i></span>
                   <span><i className="fa fa-github"></i></span><span><i className="fa fa-facebook"></i></span>

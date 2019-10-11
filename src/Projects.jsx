@@ -23,10 +23,6 @@ const Projects = (props) => {
     <div
       ref={el => sectionWrapper = el}
       className='sectionWrapper'>
-
-      <div className='heading'>
-        <h1 className='headingTitle'>MY PROJECTS</h1>
-      </div>
       <div className='wall'>
         <div className="projectWrapperLeft">
           <div className="project1">
