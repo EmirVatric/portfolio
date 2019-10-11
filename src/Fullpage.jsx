@@ -109,7 +109,7 @@ const FullPage = () =>
                 <h1 className='aboutMe'>ABOUT ME</h1>
                 <p className='storieHolder'>
                   I love to code exciting, dynamic and functional websites and applications, enjoy working in a healthy environment and strive to be a good coworker.
-                I deliver projects on <b>time</b>, <b>quality</b> and <b>budget</b>.
+                I deliver projects on <b>time</b>, <b>quality</b> and <b>budget</b>, each project is equally important and each must be met with the same standards.
               </p>
                 <div className='socials'><span><i className="fa fa-linkedin"></i></span>
                   <span><i className="fa fa-github"></i></span><span><i className="fa fa-facebook"></i></span>
