@@ -1,4 +1,5 @@
 .skillsWrapper {
+  opacity: 0;
   width: 80vw;
   border-radius: 20px;
   background: white;
