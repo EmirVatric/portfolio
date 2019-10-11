@@ -24,7 +24,17 @@
 }
 
 .s3 {
-  background: lightblue;
+  background-image: url('./img/section3background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.s4 {
+  background: url('./img/s4background.jpg');
+}
+
+.s5 {
+  background: url('./img/s4background.jpg');
 }
 
 h1 {
