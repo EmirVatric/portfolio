@@ -14,7 +14,7 @@ import postgrePNG from './img/postgresql.png'
 import mongoPNG from './img/mongo.png'
 import jqueryPNG from './img/jquery.gif'
 import gitPNG from './img/git.png'
-import { TweenMax, Power3 } from 'gsap'
+import { TweenMax, Power3, Power1 } from 'gsap'
 const Skills = (props) => {
   let wrapper = useRef(null)
   const tech = [
@@ -57,8 +57,8 @@ const Skills = (props) => {
           {
             opacity: 1,
             y: 0,
-            delay: counter,
-            ease: Power3.easeOut
+            delay: 0.3,
+            ease: Power1.easeIn
           }
         );
         for (let i = 0; i < tech.length; i++) {
