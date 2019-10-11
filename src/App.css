@@ -23,7 +23,6 @@
 }
 
 .s2 {
-
   background-image: url('./img/section2.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -31,15 +30,17 @@
 }
 
 .s3 {
-  background: url('./img/s4backg.jpg') top repeat;
+  background-image: url('./img/section3background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .s4 {
-  background: url('./img/s4backg.jpg');
+  background: url('./img/s4background.jpg');
 }
 
 .s5 {
-  background: url('./img/s4backg.jpg');
+  background: url('./img/s4background.jpg');
 }
 
 h1 {
