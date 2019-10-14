@@ -9,6 +9,7 @@ let header
 let aboutMe
 const FullPage = () =>
   (
+    // eslint-disable-next-line
     header = useRef(null),
 
 
