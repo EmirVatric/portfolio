@@ -77,8 +77,18 @@ const Projects = props => {
               <h4>Instagram Account Manager</h4>
               <p>Website design and implementation of responsive design.</p>
               <div className="iconsHolder">
-                <img src={github} className="github" alt="" />
-                <img src={demo} className="demo" alt="" />
+                <a
+                  href="https://github.com/EmirVatric/InstagramManager"
+                  target="blank"
+                >
+                  <img src={github} className="github" alt="" />
+                </a>
+                <a
+                  href="https://emirvatric.github.io/InstagramManager/"
+                  target="blank"
+                >
+                  <img src={demo} className="demo" alt="" />
+                </a>
               </div>
             </div>
           </div>
@@ -90,8 +100,12 @@ const Projects = props => {
                 integration on WebSockets, and many more features.
               </p>
               <div className="iconsHolder">
-                <img src={github} className="github" alt="" />
-                <img src={demo} className="demo" alt="" />
+                <a
+                  href="https://github.com/EmirVatric/account_ichicken"
+                  target="blank"
+                >
+                  <img src={github} className="github" alt="" />
+                </a>
               </div>
             </div>
           </div>
@@ -103,8 +117,18 @@ const Projects = props => {
                 With tests.
               </p>
               <div className="iconsHolder">
-                <img src={github} className="github" alt="" />
-                <img src={demo} className="demo" alt="" />
+                <a
+                  href="https://github.com/abdellani/final-project"
+                  target="blank"
+                >
+                  <img src={github} className="github" alt="" />
+                </a>
+                <a
+                  href="https://fast-wave-25233.herokuapp.com/ "
+                  target="blank"
+                >
+                  <img src={demo} className="demo" alt="" />
+                </a>
               </div>
             </div>
           </div>
