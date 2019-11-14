@@ -16,7 +16,6 @@ const FullPage = () => (
       scrollingSpeed={1000} /* Options here */
       navigation={true}
       scrollOverflow={true}
-      //normalScrollElements={'.s4'}
       afterLoad={(origin, destination, direction) => {
         if (origin.index === 0 && destination.index !== 1) {
           TweenMax.to(header, 2, {

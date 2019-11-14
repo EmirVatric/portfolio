@@ -59,3 +59,25 @@
   justify-content: space-between;
   margin: 0 auto;
 }
+
+@media only screen and (max-width: 600px) {
+  .skillsWrapper {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    height: auto;
+  }
+
+  .border {
+    border: none;
+  }
+
+  .languages {
+    display: block;
+  }
+
+  .side {
+    height: auto;
+  }
+
+}

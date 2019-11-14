@@ -22,6 +22,8 @@
   background-size: 100%, cover;
 }
 
+
+
 .s2 {
   background-image: url('./img/section2.jpg');
   background-repeat: no-repeat;
@@ -118,4 +120,54 @@ h1 {
 a {
   text-decoration: none;
   color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .s1 {
+    background-image: none;
+    background-color: lightblue;
+  }
+
+  .s2 {
+    background-image: none;
+    background-color: lightblue;
+    padding: 0 40px;
+  }
+
+  .s3 {
+    background-image: none;
+    background: lightblue;
+    height: auto;
+  }
+
+  .s4 {
+    background: lightblue;
+  }
+
+  .s5 {
+    background: lightblue;
+  }
+
+  .nameHolder {
+    display: block;
+  }
+
+  .wrapper {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutMe {
+    width: 100%;
+    text-align: center;
+  }
+
+  .storieHolder {
+    width: 100%;
+  }
+
+  .socials {
+    width: 100%;
+  }
 }

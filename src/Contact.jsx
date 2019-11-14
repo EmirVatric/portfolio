@@ -65,8 +65,7 @@ export default class Contact extends React.Component {
               <input
                 type="button"
                 value="Submit"
-                style={{ width: "50%" }}
-                className="btn btn-1 btn-sep icon-info"
+                className="btn btn-1"
                 onClick={this.handleSubmit}
               />
             </form>
