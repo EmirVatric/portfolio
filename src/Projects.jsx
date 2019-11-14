@@ -61,13 +61,26 @@ const Projects = props => {
             </div>
           </div>
           <div className="project5">
-            <div className="descWrapper">
-              <h4>Restaurant administration</h4>
-              <p>This is part where we write something about this page.</p>
-              <div className="iconsHolder">
-                <img src={github} className="github" alt="" />
-                <img src={demo} className="demo" alt="" />
-              </div>
+            <div className="articlesWrapper">
+              <h1>Written articles</h1>
+              <a
+                href="https://medium.com/@vatricemir/variables-in-css-77b2537c649d"
+                className="articleLink"
+              >
+                <h5>Variables in CSS</h5>
+              </a>
+              <a
+                href="https://medium.com/@vatricemir/prototype-basics-javascript-ee79c1ac693e"
+                className="articleLink"
+              >
+                <h5>Prototype basics-JavaScript</h5>
+              </a>
+              <a
+                href="https://medium.com/@vatricemir/background-jobs-in-rail-bb6888267ad5"
+                className="articleLink"
+              >
+                <h5>Background jobs in Rails</h5>
+              </a>
             </div>
           </div>
         </div>

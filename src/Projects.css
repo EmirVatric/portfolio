@@ -151,10 +151,9 @@
 
 .project5 {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  background-image: url('./img/project5.jpg');
-  background-size: cover;
+  background-color: gray;
   height: 300px;
   width: 90%;
   margin: 0 auto;
@@ -164,6 +163,19 @@
   -moz-box-shadow: 10px 10px 17px -8px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 17px -8px rgba(0, 0, 0, 0.75);
   transition: transform 1s;
+}
+
+.articlesWrapper {
+  color: white;
+}
+
+.articleLink {
+  color: white;
+  font-size: 20px;
+}
+
+.articleLink:hover {
+  color: lightblue;
 }
 
 .project6 {
