@@ -72,8 +72,8 @@ export default class Contact extends React.Component {
           </div>
           <div className="block2">
             <blockquote className="ludwig">
-              Sometimes it pays to stay in bed on Monday, rather than spending
-              the rest of the week debugging Monday’s code.
+              Web design is not just about creating pretty layouts. It’s about
+              understanding the marketing challenge behind your business.
             </blockquote>
           </div>
         </div>
