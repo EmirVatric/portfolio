@@ -27,7 +27,10 @@ const Projects = props => {
           <div className="project1">
             <div className="descWrapper">
               <h4>Royal Furniture</h4>
-              <p>Website design and 3D models implementation with THREE.js.</p>
+              <p>
+                Website design and 3D models implementation with Webpack and
+                THREE.js.
+              </p>
               <div className="iconsHolder">
                 <a
                   href="https://github.com/EmirVatric/furniture"
@@ -48,7 +51,8 @@ const Projects = props => {
             <div className="descWrapper">
               <h4>Skyleet Technologies</h4>
               <p>
-                Desktop and Mobile design with AdobeXD and its implementation.
+                Desktop and Mobile design with AdobeXD and its implementation in
+                Webpack.
               </p>
               <div className="iconsHolder">
                 <a href="https://github.com/EmirVatric/skyleet" target="blank">
@@ -88,7 +92,10 @@ const Projects = props => {
           <div className="project2">
             <div className="descWrapper">
               <h4>Instagram Account Manager</h4>
-              <p>Website design and implementation of responsive design.</p>
+              <p>
+                Website design and implementation in Webpack and animations done
+                with Luxx library
+              </p>
               <div className="iconsHolder">
                 <a
                   href="https://github.com/EmirVatric/InstagramManager"
@@ -127,7 +134,7 @@ const Projects = props => {
               <h4>Social Network</h4>
               <p>
                 Complete social network made using Ruby on Rails, postgreSQL.
-                With tests.
+                With tests in Rspec and Capybara.
               </p>
               <div className="iconsHolder">
                 <a
