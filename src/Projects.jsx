@@ -91,23 +91,14 @@ const Projects = props => {
         <div className="projectWrapperRight">
           <div className="project2">
             <div className="descWrapper">
-              <h4>Instagram Account Manager</h4>
-              <p>
-                Website design and implementation in Webpack and animations done
-                with Luxx library
-              </p>
+              <h4>BookstoreCMS</h4>
+              <p>Application for managing books.</p>
               <div className="iconsHolder">
                 <a
-                  href="https://github.com/EmirVatric/InstagramManager"
+                  href="https://github.com/EmirVatric/bookstore-cms"
                   target="blank"
                 >
                   <img src={github} className="github" alt="" />
-                </a>
-                <a
-                  href="https://emirvatric.github.io/InstagramManager/"
-                  target="blank"
-                >
-                  <img src={demo} className="demo" alt="" />
                 </a>
               </div>
             </div>
