@@ -87,10 +87,14 @@ const FullPage = () => (
                 <p className="storieHolder">
                   I love to code exciting, dynamic and functional websites and
                   applications, enjoy working in a healthy environment and
-                  strive to be a good coworker. I deliver projects on{" "}
+                  strive to be a good coworker. My main interests are working on
+                  Ruby on Rails and NodeJS projects, also i am excited about
+                  learning new programming languages. I deliver projects on
                   <b>time</b>, <b>quality</b> and <b>budget</b>, each project is
                   equally important and each must be met with the same
-                  standards.
+                  standards. Beside programming I am interested in sports
+                  (football, handball, table tennis, chess) and hiking,
+                  especially in my home country.
                 </p>
                 <div className="socials">
                   <span>

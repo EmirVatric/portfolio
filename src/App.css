@@ -101,11 +101,13 @@ h1 {
 }
 
 .storieButton {
-  width: 200px;
-  height: 30px;
+  width: 250px;
+  height: 32px;
   border: none;
   border-radius: 15px;
   background: white;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .storieButton:focus {
