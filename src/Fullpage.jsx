@@ -89,7 +89,7 @@ const FullPage = () => (
                   applications, enjoy working in a healthy environment and
                   strive to be a good coworker. My main interests are working on
                   Ruby on Rails and NodeJS projects, also i am excited about
-                  learning new programming languages. I deliver projects on
+                  learning new programming languages. I deliver projects on{" "}
                   <b>time</b>, <b>quality</b> and <b>budget</b>, each project is
                   equally important and each must be met with the same
                   standards. Beside programming I am interested in sports
