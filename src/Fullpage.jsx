@@ -99,7 +99,7 @@ const FullPage = () => (
                 <div className="socials">
                   <span>
                     <a
-                      href="https://www.linkedin.com/in/emir-vatri%C4%87-10b046aa/"
+                      href="https://www.linkedin.com/in/emirvatric/"
                       target="blank"
                     >
                       <i className="fa fa-linkedin"></i>
