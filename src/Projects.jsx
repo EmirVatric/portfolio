@@ -39,7 +39,7 @@ const Projects = props => {
                   <img src={github} className="github" alt="" />
                 </a>
                 <a
-                  href="https://emirvatric.github.io/furniture/"
+                  href="https://emirvatric.github.io/RoyalFurniture/"
                   target="blank"
                 >
                   <img src={demo} className="demo" alt="" />
