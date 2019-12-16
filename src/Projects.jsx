@@ -91,14 +91,20 @@ const Projects = props => {
         <div className="projectWrapperRight">
           <div className="project2">
             <div className="descWrapper">
-              <h4>BookstoreCMS</h4>
-              <p>Application for managing books.</p>
+              <h4>Shifts</h4>
+              <p>
+                Mobile application built on RubyOnRails back-end and ReactJs
+                front-end, task, time and team managment tool for small teams.
+              </p>
               <div className="iconsHolder">
+                <a href="https://github.com/EmirVatric/Shifts" target="blank">
+                  <img src={github} className="github" alt="" />
+                </a>
                 <a
-                  href="https://github.com/EmirVatric/bookstore-cms"
+                  href="https://safe-anchorage-49127.herokuapp.com/ "
                   target="blank"
                 >
-                  <img src={github} className="github" alt="" />
+                  <img src={demo} className="demo" alt="" />
                 </a>
               </div>
             </div>
