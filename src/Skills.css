@@ -4,6 +4,7 @@
   border-radius: 20px;
   background: white;
   margin: 0 auto;
+  margin-top: -50px;
   -webkit-box-shadow: 10px 10px 17px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 17px -8px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 17px -8px rgba(0, 0, 0, 0.75);
@@ -32,7 +33,7 @@
 
 
 .language {
-  opacity: 0;
+  opacity: 1;
   height: 50px;
   display: flex;
   align-items: center;
