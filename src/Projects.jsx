@@ -85,6 +85,12 @@ const Projects = props => {
               >
                 <h5>Background jobs in Rails</h5>
               </a>
+              <a
+                href="https://medium.com/@vatricemir/understanding-rake-in-ruby-9eaf7f7b20cc"
+                className="articleLink"
+              >
+                <h5>Understanding Rake in Ruby</h5>
+              </a>
             </div>
           </div>
         </div>
