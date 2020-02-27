@@ -68,6 +68,12 @@ const Projects = props => {
             <div className="articlesWrapper">
               <h1>Written articles</h1>
               <a
+                href="https://medium.com/@vatricemir/understanding-rake-in-ruby-9eaf7f7b20cc"
+                className="articleLink"
+              >
+                <h5>Understanding Rake in Ruby</h5>
+              </a>
+              <a
                 href="https://medium.com/@vatricemir/variables-in-css-77b2537c649d"
                 className="articleLink"
               >
@@ -84,12 +90,6 @@ const Projects = props => {
                 className="articleLink"
               >
                 <h5>Background jobs in Rails</h5>
-              </a>
-              <a
-                href="https://medium.com/@vatricemir/understanding-rake-in-ruby-9eaf7f7b20cc"
-                className="articleLink"
-              >
-                <h5>Understanding Rake in Ruby</h5>
               </a>
             </div>
           </div>
