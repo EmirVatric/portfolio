@@ -100,14 +100,22 @@ h1 {
   padding: 2px 40px;
 }
 
+.blogButtonWrapper{
+  margin-top: 10px;
+}
+
 .storieButton {
   width: 250px;
   height: 32px;
   border: none;
-  border-radius: 15px;
-  background: white;
+  border-radius: 5px;
+  background-color:rgba(255, 255, 255, 0.5);;
   font-size: 13px;
   font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 55px;
+  padding-left: 55px;
 }
 
 .storieButton:focus {

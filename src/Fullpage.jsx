@@ -68,12 +68,11 @@ const FullPage = () => (
                   Hello, I'm <span className="nameHolder">Emir Vatrić.</span>
                 </h1>
                 <h1>I'm full-stack web developer.</h1>
-                <button
-                  className="storieButton"
-                  onClick={() => fullpageApi.moveSectionDown()}
-                >
-                  SEE MY STORY
-                </button>
+                <div className="blogButtonWrapper">
+                  <a href="https://medium.com/@vatricemir" className="storieButton" target="_blank">
+                    READ MY BLOG
+                  </a>
+                </div>
               </div>
             </div>
             <div className="section s2">
@@ -132,13 +131,19 @@ const FullPage = () => (
               </div>
             </div>
             <div className="section s3">
+              <div className="maxWidthWrapper">
               <Skills index={state} />
+              </div>
             </div>
             <div className="section s4">
-              <Projects index={state} fullpageapi={fullpageApi} />
+              <div className="maxWidthWrapper">
+                <Projects index={state} fullpageapi={fullpageApi} />
+              </div>
             </div>
             <div className="section s5">
-              <Contact />
+              <div className="maxWidthWrapper">
+                <Contact />
+              </div>
             </div>
           </ReactFullpage.Wrapper>
         );
